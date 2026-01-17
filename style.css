@@ -597,70 +597,67 @@ html, body {
   
   
   .hero {
- height: auto !important;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 100px; 
+height: auto !important;
+    padding: 20px 0;
   }
 
   .hero__row {
-    height: auto !important;
+   padding: 0 20px;
     display: flex;
-    flex-direction: column; /* İçerikleri alt alta diz */
+    flex-direction: column;
     align-items: center;
   }
 
   .hero__text h1 {
 font-size: 32px !important;
     margin-bottom: 10px;
+    line-height: 1.2;
   }
 
   .hero__text {
-    order: 1; 
+  margin-top: 20px; 
     text-align: center;
-    margin-bottom: 20px;
   }
 
   .hero__text p {
-    font-size: 16px !important;
-    padding: 0 10px;
+   font-size: 16px !important;
   }
 
  
   .hero__photo {
-  position: relative !important; 
+ position: relative !important; 
+    top: auto !important;
     right: auto !important;
-    bottom: 0 !important;
-    order: 2; 
-    width: 100% !important;
-    max-width: 320px; 
-    margin: 0 auto;
+    bottom: auto !important;
+    margin: 30px auto 0 !important; 
+    width: 90% !important;
+    max-width: 300px;
     display: block;
   }
 
-  /* 2. HEADER & MENÜ */
+
   header.header {
-    padding: 0 5%;
-    height: 60px;
-    justify-content: center; 
+    position: relative; 
+    height: auto;
+    padding: 20px 0;
+    flex-direction: column; 
+    gap: 15px;
   }
 
   .header__logo img {
-    width: 80px;
+  width: 100px; 
+    margin: 0 auto;
   }
 
   .menu {
-    display: flex;
-    flex-wrap: wrap; /* Sığmayan linkleri alt satıra atar */
+  display: flex;
+    flex-wrap: wrap; /* Menü elemanları sığmazsa alt alta geçer */
     justify-content: center;
     gap: 10px;
-    padding: 10px 0;
  
   }
   .menu a {
-    font-size: 13px; /* Linkleri küçült */
+    font-size: 14px;
   }
 
   /* 3. TÜM ANA BAŞLIKLAR */
