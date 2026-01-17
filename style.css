@@ -582,3 +582,84 @@ footer {
   line-height: 1.6;
   color: #111;
 }
+
+/* --- MOBİL UYUMLULUK (RESPONSIVE) AYARLARI --- */
+
+@media (max-width: 768px) {
+  
+  
+  .about__title, 
+  .experience__title, 
+  .skills__title, 
+  .portfolio__title, 
+  .contact__title {
+    font-size: 28px !important; 
+    margin-bottom: 30px;
+  }
+
+  /* 2. Hero / Banner Bölümü */
+  .hero__text h1 {
+    font-size: 40px !important;
+  }
+  
+  .hero__text p {
+    font-size: 18px !important;
+  }
+
+  .hero__photo {
+    width: 80%; 
+    position: relative; 
+    margin: 20px auto 0;
+    display: block;
+  }
+
+
+  .menu {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* 4. Hakkımda Bölümü */
+  .about__container {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .about__content {
+    min-width: 100%;
+  }
+
+  /* 5. Deneyimlerim ve Uzmanlık Kartları */
+  .experience__row, 
+  .skills__row {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .experience__col, 
+  .skills__col {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  
+  .portfolio__row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .portfolio__col {
+    flex: 1 1 100%;
+  }
+
+  
+  .contact__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__box {
+    min-width: 90%; 
+  }
+}
