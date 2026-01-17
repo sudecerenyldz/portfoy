@@ -387,13 +387,13 @@ footer {
 }
 
 .footer__socials img {
-  width: 30px; /* ikon boyutu büyütüldü */
+  width: 30px; 
   height: 30px;
-  transition: transform 0.3s ease; /* hover efekt eklemek için */
+  transition: transform 0.3s ease; /* hover efektim*/
 }
 
 .footer__socials img:hover {
-  transform: scale(1.1); /* hafif büyüme efekti */
+  transform: scale(1.1); /* hafif büyüme efektim */
 }
 .hero {
   height: 100vh;
@@ -434,7 +434,7 @@ footer {
   z-index: 2;
 }
 
-/* DENEYİMLER / STAJLAR */
+/* deneyimlerim */
 .experience {
   padding: 80px 10%;
   background-color: #f5f5f5;
@@ -455,7 +455,7 @@ footer {
   justify-content: space-between;
   gap: 30px;
   overflow-x: auto; /* Taşarsa yatay kaydırılması için koydum */
-  padding-bottom: 10px; /* Scroll çubuğu için boşluk */
+  padding-bottom: 10px; /* Scroll çubuğu için boşluk koydum */
 }
 
 .experience__col {
