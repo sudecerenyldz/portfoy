@@ -116,12 +116,14 @@ header.header {
   color: #111;
 }
 .about__title {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #111;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;           
+  font-weight: 700;          
+  text-align: center; 
+  letter-spacing: 2px;       
+  text-transform: uppercase;
+  margin-bottom: 60px;       
+  color: #1e293b;
 }
 .about__container {
   display: flex;
@@ -211,11 +213,15 @@ header.header {
 }
 
 .skills__title {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: bold;
-  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;          
+  font-weight: 700;          
+  text-align: center; 
+  letter-spacing: 2px;       
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: #ffffff;            
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 
 .skills__row {
@@ -276,11 +282,15 @@ header.header {
   color: #111;
 }
 .portfolio__title {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: bold;
-  letter-spacing: 1px;
+font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;           
+  font-weight: 700;          
+  text-align: center; 
+  letter-spacing: 2px;       
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: #1e293b;            
+  opacity: 1;
 }
 .portfolio__row {
   display: flex;
@@ -330,7 +340,7 @@ font-family: 'Bebas Neue', sans-serif;
 
 .contact__box {
   background: #ffffff;
-  /* Kutuyu yatay (ikon solda, yazı sağda) yapıyoruz */
+  
   display: flex; 
   align-items: center;
   gap: 20px;
@@ -512,20 +522,23 @@ footer {
 }
 
 .experience__title {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;          
+  font-weight: 700;          
+  text-align: center; 
+  letter-spacing: 2px;       
+  text-transform : uppercase;
+  margin-bottom: 60px;
+  color: #1e293b;
 }
 
 .experience__row {
   display: flex;
-  flex-wrap: nowrap; /* Kutuların alt satıra geçmicek */
+  flex-wrap: nowrap; /* Kutularım alt satıra geçmicek */
   justify-content: space-between;
   gap: 30px;
-  overflow-x: auto; /* Taşarsa yatay kaydırılması için koydum */
-  padding-bottom: 10px; /* Scroll çubuğu için boşluk koydum */
+  overflow-x: auto; 
+  padding-bottom: 10px; 
 }
 
 .experience__col {
