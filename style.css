@@ -594,115 +594,111 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  
-  
-  .hero {
-height: auto !important;
-    padding: 20px 0;
-  }
-
-  .hero__row {
-   padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero__text h1 {
-font-size: 32px !important;
-    margin-bottom: 10px;
-    line-height: 1.2;
-  }
-
-  .hero__text {
-  margin-top: 20px; 
-    text-align: center;
-  }
-
-  .hero__text p {
-   font-size: 16px !important;
-  }
-
- 
-  .hero__photo {
- position: relative !important; 
-    top: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    margin: 30px auto 0 !important; 
-    width: 90% !important;
-    max-width: 300px;
-    display: block;
-  }
-
-
   header.header {
-  position: relative; 
-    height: auto;
-    padding: 15px 5%; 
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
+    position: relative !important;
+    height: auto !important;
+    padding: 20px 5% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 15px !important;
+    background: #0f172a !important;
+  }
+
+  .header__logo {
+    margin: 0 !important;
   }
 
   .header__logo img {
-  width: 80px; 
-    margin: 0;
+    width: 80px !important;
+    margin: 0 !important;
   }
 
   .menu {
-display: flex;
-    flex-wrap: wrap; 
-    justify-content: flex-end; 
-    gap: 10px;
-    max-width: 70%;
- 
-  }
-  .menu a {
-    font-size: 14px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
   }
 
-  /* 3. TÜM ANA BAŞLIKLAR */
+  .menu a {
+    font-size: 13px !important;
+  }
+
+  .hero {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 40px 20px !important;
+    margin: 0 !important;
+  }
+
+  .hero__row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .hero__text {
+    order: 1 !important;
+    text-align: center !important;
+    margin: 0 0 30px 0 !important;
+    position: relative !important;
+  }
+
+  .hero__text h1 {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero__photo {
+    order: 2 !important;
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    margin: 0 auto !important;
+    width: 90% !important;
+    max-width: 320px !important;
+    display: block !important;
+  }
+
   .about__title, .experience__title, .skills__title, .portfolio__title, .contact__title {
     font-size: 26px !important;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
+    letter-spacing: 2px !important;
+    margin-bottom: 30px !important;
   }
 
-  /* 4. HAKKIMDA BÖLÜMÜ */
   .about__container {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column !important;
+    gap: 20px !important;
   }
 
   .about__content {
-    padding: 15px;
-    text-align: center;
+    padding: 15px !important;
+    text-align: center !important;
   }
 
-  /* 5. DENEYİMLER & UZMANLIK (KARTLAR) */
   .experience__row, .skills__row {
-    flex-direction: column;
-    gap: 20px;
-    overflow-x: hidden; /* Yatay kaymayı engelle */
+    flex-direction: column !important;
+    gap: 20px !important;
   }
 
   .experience__col, .skills__col {
     width: 100% !important;
-    flex: none;
+    flex: none !important;
   }
 
-  
   .contact__box {
     min-width: 100% !important;
-    box-sizing: border-box;
-    padding: 20px;
+    box-sizing: border-box !important;
+    padding: 20px !important;
   }
 
   .contact__box p {
-    font-size: 14px;
-    word-break: break-all; 
+    font-size: 14px !important;
+    word-break: break-all !important;
   }
 }
