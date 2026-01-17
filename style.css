@@ -597,21 +597,30 @@ html, body {
   
   
   .hero {
-    height: auto; 
-    padding: 100px 20px 50px; 
-    background-attachment: scroll; 
+ height: auto !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px; 
   }
 
   .hero__row {
-    padding: 0;
+    height: auto !important;
+    display: flex;
+    flex-direction: column; /* İçerikleri alt alta diz */
     align-items: center;
-    text-align: center;
   }
 
   .hero__text h1 {
-    font-size: 32px !important; 
-    line-height: 1.2;
-    margin-bottom: 15px;
+font-size: 32px !important;
+    margin-bottom: 10px;
+  }
+
+  .hero__text {
+    order: 1; 
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .hero__text p {
@@ -621,10 +630,13 @@ html, body {
 
  
   .hero__photo {
-    position: static; /* Sağ alt köşeden çıkarır */
-    width: 90%; 
-    max-width: 300px;
-    margin: 30px auto 0;
+  position: relative !important; 
+    right: auto !important;
+    bottom: 0 !important;
+    order: 2; 
+    width: 100% !important;
+    max-width: 320px; 
+    margin: 0 auto;
     display: block;
   }
 
@@ -640,8 +652,15 @@ html, body {
   }
 
   .menu {
-    display: none; 
+    display: flex;
+    flex-wrap: wrap; /* Sığmayan linkleri alt satıra atar */
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
  
+  }
+  .menu a {
+    font-size: 13px; /* Linkleri küçült */
   }
 
   /* 3. TÜM ANA BAŞLIKLAR */
@@ -674,7 +693,7 @@ html, body {
     flex: none;
   }
 
-  /* 6. İLETİŞİM KUTULARI */
+  
   .contact__box {
     min-width: 100% !important;
     box-sizing: border-box;
