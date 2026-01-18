@@ -676,20 +676,23 @@ footer {
   }
 
   .contact__row {
+   display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important; 
+    align-items: center !important; 
+    justify-content: center !important;
     text-align: center !important; 
+    padding: 0 15px !important; 
+  }
   }
 
   .contact__box {
-   max-width: 350px !important;
+    max-width: 350px !important; 
     width: 100% !important; 
-    margin: 0 auto 12px auto !important;
-    padding: 0 10px !important; 
-    box-sizing: border-box;
+    margin: 0 0 12px 0 !important; 
+    box-sizing: border-box; 
+    padding: 10px !important; 
   }
-}
+
 
 /* -------------*/
 
