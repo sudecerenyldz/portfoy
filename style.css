@@ -634,13 +634,14 @@ footer {
   }
 
   .hero__photo {
-    position: static !important; /* Havada asılı kalıp yazıya binmesini engelliyor*/
+    position: static !important; 
     margin: 20px auto !important;
     width: 85% !important;
     max-width: 280px !important;
     display: block !important;
   }
 
+  
   /* Deneyimlerim  Sola/Sağa kaymayı önler ortalar */
   .experience__row,
   .skills__row {
@@ -691,5 +692,67 @@ footer {
   .contact__box {
     width: 100% !important;
     padding: 15px !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+    .hero{
+  display: flex !important;
+  flex-direction: column !important;
+}
+.hero__photo{
+    order: 2 !important;
+  margin: 20px -10px 0 auto !important;  
+  width: 85% !important;
+  max-width: 260px !important;
+}
+
+.hero__text{
+  order: 1 !important;
+}
+  
+  .hero__photo img{
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  .hero__photo{
+    margin-top: 10px !important;
+     margin-top: 30px !important;
+  }
+
+  /* HAKKIMDA sağa kaymayı kes */
+  .about{
+    padding: 0 12px !important;
+  }
+
+  .about__container{
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .about__image{
+    margin: 0 auto !important;
+  }
+
+  /* BANA ULAŞIN kutularının sağa taşmasını kes */
+  .contact{
+    padding: 0 12px !important;
+  }
+
+  .contact__row{
+    width: 100% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact__box{
+    max-width: 350px !important;
+    margin: 0 auto 12px auto !important;
   }
 }
