@@ -678,11 +678,16 @@ footer {
   .contact__row {
     flex-direction: column !important;
     align-items: center !important;
+    justify-content: center !important; 
+    text-align: center !important; 
   }
 
   .contact__box {
-    max-width: 350px !important;
+   max-width: 350px !important;
+    width: 100% !important; 
     margin: 0 auto 12px auto !important;
+    padding: 0 10px !important; 
+    box-sizing: border-box;
   }
 }
 
@@ -768,7 +773,7 @@ footer {
   border-radius: 4px;
 }
 
-/* MOBİL */
+
 @media (max-width: 768px) {
   .mobile-toggle {
     display: block;
