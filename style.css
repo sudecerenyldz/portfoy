@@ -1,91 +1,87 @@
-
 body {
   margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   color: #111;
   background-color: #fff;
   scroll-behavior: smooth;
 }
 
-
-
 header.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* logo ve menüm dikey ortada */
-    padding: 0 10%;
-    background: transparent;
-    z-index: 1000;
-    height: 80px; 
-    box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* logo ve menüm dikey ortada */
+  padding: 0 10%;
+  background: transparent;
+  z-index: 1000;
+  height: 80px;
+  box-sizing: border-box;
 }
 
 /* ------------------------------------------------- */
 .header__logo img {
-     width: 120px;   
-    height: auto;
-    object-fit: contain;
-    display: block;
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 /* menü */
 .menu {
-    display: flex;
-    gap: 25px;
-    align-items: center; /* menümün linklerini ortaladım */
+  display: flex;
+  gap: 25px;
+  align-items: center; /* menümün linklerini ortaladım */
 }
 
 .menu a {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 0;
-    position: relative;
-    white-space: nowrap;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 0;
+  position: relative;
+  white-space: nowrap;
 }
 
 .menu a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: #2563eb;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2563eb;
+  transition: width 0.3s ease;
 }
 
 .menu a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .menu a:hover {
-    color: #2563eb;
-    transform: translateY(-2px);
+  color: #2563eb;
+  transform: translateY(-2px);
 }
-
 
 .hero__text {
   text-align: center;
   margin-bottom: 50px;
 }
 .hero__text h1 {
-  font-family: 'Bebas Neue', sans-serif; 
+  font-family: "Bebas Neue", sans-serif;
   font-size: 72px;
   color: #fff;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 .hero__text p {
-  font-family: 'Inter', sans-serif; 
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   color: #fff;
   text-align: center;
@@ -93,7 +89,7 @@ header.header {
 }
 
 .hero__text .btn {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   background-color: #2563eb;
   padding: 12px 30px;
@@ -106,7 +102,7 @@ header.header {
 .hero__text .btn:hover {
   background-color: #1e40af;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* HAKKIMDA */
@@ -116,13 +112,13 @@ header.header {
   color: #111;
 }
 .about__title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 42px;           
-  font-weight: 700;          
-  text-align: center; 
-  letter-spacing: 2px;       
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 60px;       
+  margin-bottom: 60px;
   color: #1e293b;
 }
 .about__container {
@@ -140,7 +136,7 @@ header.header {
   width: 100%;
   border-radius: 15px;
   border: 3px solid #2563eb;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transform: translateY(-5px);
 }
 .about__content {
@@ -151,11 +147,13 @@ header.header {
   padding: 20px;
   border-radius: 10px;
   color: #111;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .about__content:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 .about__content p {
   font-size: 18px;
@@ -175,9 +173,8 @@ header.header {
 .btn-about:hover {
   background-color: #1e40af;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-
 
 .skills {
   padding: 80px 10%;
@@ -204,42 +201,41 @@ header.header {
   align-items: center;
 }
 
-
 .skills {
   padding: 80px 10%;
   /* Banner Saydamlığı  */
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); 
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
   color: #fff;
 }
 
 .skills__title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 42px;          
-  font-weight: 700;          
-  text-align: center; 
-  letter-spacing: 2px;       
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 60px;
-  color: #ffffff;            
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .skills__row {
   display: flex;
-  justify-content: center; 
-  align-items: stretch;    
-  gap: 20px;               
-  flex-wrap: nowrap;       
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
 .skills__col {
-  flex: 1;                 
-  min-width: 0;            
+  flex: 1;
+  min-width: 0;
 }
 
 .skill-box {
-  height: 100%;            
-  background: rgba(255, 255, 255, 0.08) !important; 
+  height: 100%;
+  background: rgba(255, 255, 255, 0.08) !important;
   padding: 25px 20px;
   border-radius: 16px;
   text-align: center;
@@ -261,20 +257,17 @@ header.header {
 
 .skill-box h3 {
   margin-bottom: 12px;
-  font-size: 1.2rem;       
-  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
   color: #60a5fa;
 }
 
 .skill-box p {
-  font-size: 14px;        
+  font-size: 14px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.85);
   margin: 0;
 }
-
-
-
 
 .portfolio {
   padding: 80px 10%;
@@ -282,14 +275,14 @@ header.header {
   color: #111;
 }
 .portfolio__title {
-font-family: 'Bebas Neue', sans-serif;
-  font-size: 42px;           
-  font-weight: 700;          
-  text-align: center; 
-  letter-spacing: 2px;       
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 60px;
-  color: #1e293b;            
+  color: #1e293b;
   opacity: 1;
 }
 .portfolio__row {
@@ -308,25 +301,25 @@ font-family: 'Bebas Neue', sans-serif;
   width: 100%;
   display: block;
   border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .project-box img:hover {
   transform: scale(1.05) rotate(1deg);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
-
-
 
 .contact {
   padding: 100px 10%;
-  background: #fdfdfd; 
+  background: #fdfdfd;
 }
 
 .contact__title {
-font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 48px;
   text-align: center; /* Yazım ortada */
-  width: 100%;        
+  width: 100%;
   margin: 0 auto 60px auto; /* Üstte 0, yanlarda otomatik, altta 60px boşlukkkk */
   color: #1e293b;
 }
@@ -340,18 +333,19 @@ font-family: 'Bebas Neue', sans-serif;
 
 .contact__box {
   background: #ffffff;
-  
-  display: flex; 
+
+  display: flex;
   align-items: center;
   gap: 20px;
-  
+
   padding: 25px 35px;
   border-radius: 12px;
-  min-width: 320px; 
-  
-  
+  min-width: 320px;
+
   border: 1px solid #f1f5f9;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -360,7 +354,6 @@ font-family: 'Bebas Neue', sans-serif;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   border-color: #2563eb;
 }
-
 
 .contact__box img {
   width: 24px;
@@ -372,13 +365,12 @@ font-family: 'Bebas Neue', sans-serif;
 }
 
 .contact__box p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #475569;
   margin: 50;
 }
-
 
 footer {
   padding: 40px 10%;
@@ -386,7 +378,7 @@ footer {
   text-align: center;
   color: #fff;
   position: relative;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .footer__content {
@@ -403,7 +395,6 @@ footer {
   margin-bottom: 10px;
   color: #ccc;
 }
-
 
 .footer__links {
   display: flex;
@@ -437,12 +428,10 @@ footer {
   transform: scale(1.1);
 }
 
-
 .footer__copyright {
   font-size: 14px;
   color: #aaa;
 }
-
 
 .footer__top {
   position: absolute;
@@ -458,16 +447,15 @@ footer {
   color: #2563eb;
 }
 
-
 .footer__socials {
   display: flex;
   justify-content: center;
-  gap: 30px; 
+  gap: 30px;
   margin-bottom: 20px;
 }
 
 .footer__socials img {
-  width: 30px; 
+  width: 30px;
   height: 30px;
   transition: transform 0.3s ease; /* hover efektim*/
 }
@@ -477,7 +465,8 @@ footer {
 }
 .hero {
   height: 100vh;
-  background: url('images/Black Modern Gradient Programmer Presentation.png') center/cover no-repeat;
+  background: url("images/Black Modern Gradient Programmer Presentation.png")
+    center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -487,9 +476,11 @@ footer {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -508,7 +499,7 @@ footer {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 550px; 
+  width: 550px;
   height: auto;
   object-fit: contain;
   z-index: 2;
@@ -522,12 +513,12 @@ footer {
 }
 
 .experience__title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 42px;          
-  font-weight: 700;          
-  text-align: center; 
-  letter-spacing: 2px;       
-  text-transform : uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   margin-bottom: 60px;
   color: #1e293b;
 }
@@ -537,17 +528,17 @@ footer {
   flex-wrap: nowrap; /* Kutularım alt satıra geçmicek */
   justify-content: space-between;
   gap: 30px;
-  overflow-x: auto; 
-  padding-bottom: 10px; 
+  overflow-x: auto;
+  padding-bottom: 10px;
 }
 
 .experience__col {
   flex: 0 0 23%;
-  background-color: #f0f4ff; 
+  background-color: #f0f4ff;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* hafif gölge ile öne çıkardımm */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* hafif gölge ile öne çıkardımm */
 }
 
 .experience-box {
@@ -555,12 +546,14 @@ footer {
   padding: 25px;
   border-radius: 12px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .experience-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .experience__logo {
@@ -570,39 +563,30 @@ footer {
 }
 
 .experience-box h3 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 22px;
   color: #2563eb;
   margin-bottom: 10px;
 }
 
 .experience-box p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #111;
 }
 
-
-
-
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 @media (max-width: 768px) {
   header.header {
     position: relative !important;
-    height: auto !important;
-    padding: 20px 5% !important;
     display: flex !important;
     flex-direction: column !important;
-    align-items: flex-start !important;
+    align-items: center !important;
+    background: transparent !important;
+    padding: 20px 0 !important;
+    height: auto !important;
+    width: 100% !important;
     gap: 15px !important;
-    background: #0f172a !important;
   }
 
   .header__logo {
@@ -610,95 +594,102 @@ html, body {
   }
 
   .header__logo img {
-    width: 80px !important;
-    margin: 0 !important;
+    width: 90px !important;
   }
 
   .menu {
     display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: flex-start !important;
-    gap: 10px !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important; /* Sığmazsa aşağı kayar */
+    justify-content: center !important;
+    gap: 12px !important;
+    width: 100% !important;
   }
 
   .menu a {
-    font-size: 13px !important;
+    font-size: 14px !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    background: transparent !important;
+    padding: 5px !important;
   }
 
+  /* Bannerın Yazı ve Fotoğraf Kaymalarını Düzelttimm*/
   .hero {
     height: auto !important;
-    min-height: auto !important;
-    padding: 40px 20px !important;
-    margin: 0 !important;
+    padding-top: 10px !important;
   }
 
   .hero__row {
-    display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
-    height: auto !important;
-    padding: 0 !important;
-  }
-
-  .hero__text {
-    order: 1 !important;
     text-align: center !important;
-    margin: 0 0 30px 0 !important;
-    position: relative !important;
+    padding: 0 15px !important;
   }
 
   .hero__text h1 {
-    font-size: 32px !important;
-    line-height: 1.2 !important;
+    font-size: 42px !important;
+    line-height: 1.1 !important;
+    margin-bottom: 15px !important;
   }
 
   .hero__photo {
-    order: 2 !important;
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    left: auto !important;
-    margin: 0 auto !important;
-    width: 90% !important;
-    max-width: 320px !important;
+    position: static !important; /* Havada asılı kalıp yazıya binmesini engelliyor*/
+    margin: 20px auto !important;
+    width: 85% !important;
+    max-width: 280px !important;
     display: block !important;
   }
 
-  .about__title, .experience__title, .skills__title, .portfolio__title, .contact__title {
-    font-size: 26px !important;
-    letter-spacing: 2px !important;
-    margin-bottom: 30px !important;
-  }
-
-  .about__container {
+  /* Deneyimlerim  Sola/Sağa kaymayı önler ortalar */
+  .experience__row,
+  .skills__row {
+    display: flex !important;
     flex-direction: column !important;
+    align-items: center !important; /* Kutuları merkeze sabitler */
+    padding: 20px !important;
     gap: 20px !important;
   }
 
-  .about__content {
-    padding: 15px !important;
+  .experience-box,
+  .skill-box {
+    width: 100% !important;
+    max-width: 350px !important;
+    margin: 0 auto !important; /* Kaymayı önlüyor*/
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Hizmetlerim  Kutuları alt alta dizcek  */
+  .portfolio__row {
+    display: flex !important;
+    flex-direction: column !important; /* Yan yana yerine alt alta */
+    align-items: center !important;
+    gap: 25px !important;
+  }
+
+  .project-box {
+    width: 90% !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+  }
+
+  .project-box img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 12px !important;
+  }
+
+  /* Hakkımda ve İletişim */
+  .about__container,
+  .contact__row {
+    flex-direction: column !important;
+    align-items: center !important;
     text-align: center !important;
   }
 
-  .experience__row, .skills__row {
-    flex-direction: column !important;
-    gap: 20px !important;
-  }
-
-  .experience__col, .skills__col {
-    width: 100% !important;
-    flex: none !important;
-  }
-
   .contact__box {
-    min-width: 100% !important;
-    box-sizing: border-box !important;
-    padding: 20px !important;
-  }
-
-  .contact__box p {
-    font-size: 14px !important;
-    word-break: break-all !important;
+    width: 100% !important;
+    padding: 15px !important;
   }
 }
