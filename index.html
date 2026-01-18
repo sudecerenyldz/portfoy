@@ -10,27 +10,36 @@
       rel="stylesheet"
     />
   </head>
+
+
   <body>
     <!-- banner -->
     <section class="hero">
       <div class="hero__row">
-        <header class="header">
-          <div class="header__logo">
-            <img
-              src="images/Blue and Purple Modern Technology Logo-Photoroom (1).png"
-              alt="Logo"
-            />
-          </div>
-           <input type="checkbox" id="menuToggle">
-    <label for="menuToggle" class="mobile-toggle">☰</label>
-          <nav class="menu">
-            <a href="#hero">Ana Sayfa</a>
-            <a href="#about">Hakkımda</a>
-            <a href="#skills">Deneyimlerim</a>
-            <a href="#portfolio">Hizmetlerim</a>
-            <a href="#contact">İletişim</a>
-          </nav>
-        </header>
+       <header class="header">
+  <div class="header__logo">
+    <img
+      src="images/Blue and Purple Modern Technology Logo-Photoroom (1).png"
+      alt="Logo"
+    />
+  </div>
+
+  <!-- Menü aç/kapa kontrolü (GÖRÜNMEZ ama şart) -->
+  <input type="checkbox" id="menuToggle">
+
+  <!-- Hamburger ikon -->
+  <label for="menuToggle" class="mobile-toggle">☰</label>
+
+  <!-- Menü -->
+  <nav class="menu">
+    <a href="#hero">Ana Sayfa</a>
+    <a href="#about">Hakkımda</a>
+    <a href="#skills">Deneyimlerim</a>
+    <a href="#portfolio">Hizmetlerim</a>
+    <a href="#contact">İletişim</a>
+  </nav>
+</header>
+
 
         <div class="hero__text" id="hero">
           <h1>Sude Ceren Yıldız</h1>
@@ -235,5 +244,37 @@
         <a href="#hero" class="footer__top" title="Sayfanın başına dön">↑</a>
       </div>
     </footer>
+    <script>
+const toggleBtn = document.querySelector('.mobile-toggle');
+const menu = document.querySelector('.menu');
+
+// Butona tıklandığında menüyü aç/kapat
+toggleBtn.addEventListener('click', function(e) {
+    e.stopPropagation(); // Tıklamanın sayfaya yayılmasını engeller
+    menu.classList.toggle('active');
+});
+
+// Sayfanın herhangi bir yerine tıklandığında
+document.addEventListener('click', function(e) {
+    // Tıklanan yer menü mü?
+    const isClickInsideMenu = menu.contains(e.target);
+    // Tıklanan yer buton mu?
+    const isClickOnButton = toggleBtn.contains(e.target);
+
+    // Eğer menü açıksa VE tıklanan yer menü veya buton DEĞİLSE kapat
+    if (menu.classList.contains('active') && !isClickInsideMenu && !isClickOnButton) {
+        menu.classList.remove('active');
+    }
+});
+
+// Linklere tıklayınca kapanması için
+const navLinks = document.querySelectorAll('.menu a');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
+});
+</script>
+
   </body>
 </html>
